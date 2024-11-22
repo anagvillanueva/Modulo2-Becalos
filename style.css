@@ -2,10 +2,22 @@
 *{
     padding: 0; 
     margin: 0;
+    box-sizing: border-box;
 }
+
+/*CSS que me dio Google Fonts*/
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /*Selector de tipo: Etiqueta*/
 body{
     background-color: chocolate;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 300;
+    font-style: normal;
 }
 main{
     /*Ajustar las tarjetas a varias lineas*/
@@ -14,11 +26,13 @@ main{
 }
 h1{
     color:white;
+    text-align: center;
 }
 /*Selector de tipo: Clase*/
 /*Reutilizar estilos*/
 .tarjeta {
     width: 320px;
+    height: 335px;
     background-color: antiquewhite;
     border-radius: 3%;
     /*Centrando elementos*/
@@ -27,8 +41,14 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 8px; /*Separación*/
+    margin:10px;
+    padding: 11px;
+    border: 3px solid black;
     transition: all 0.4s ease-in-out; /*Transicion suave*/
+}
+
+.titulo-tarjeta{
+    margin-bottom: 10px;
 }
 /*Pseudoclase Hover para crear animaciones*/
 .tarjeta:hover{
@@ -40,7 +60,8 @@ h1{
     width: 200px;
 }
 .tarjeta img{
-    width: 100%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 5%;
 }
